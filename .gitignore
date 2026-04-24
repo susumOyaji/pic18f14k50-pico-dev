@@ -1,0 +1,25 @@
+# XC8 Build artifacts
+dist/
+build/
+*.o
+*.p1
+*.d
+*.pre
+*.sym
+*.cm
+*.hex
+*.elf
+*.map
+*.lst
+*.srl
+*.pre
+
+# VS Code
+.vscode/ipch/
+.vscode/.cm/
+.history/
+*.log
+
+# OS files
+Thumbs.db
+.DS_Store

@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build PIC18F14K50",
+            "type": "process",
+            "command": "C:/Program Files/Microchip/xc8/v3.10/bin/xc8-cc.exe",
+            "args": [
+                "-mcpu=18f14k50",
+                "-mdfp=${env:USERPROFILE}/.mchp_packs/Microchip/PIC18F-K_DFP/1.15.303/xc8",
+                "main.c",
+                "-o",
+                "dist/main.hex"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

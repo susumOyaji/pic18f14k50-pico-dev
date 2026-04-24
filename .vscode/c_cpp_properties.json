@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "XC8",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Program Files/Microchip/xc8/v3.10/pic/include",
+                "C:/Program Files/Microchip/xc8/v3.10/pic/include/c99"
+            ],
+            "defines": [
+                "_PIC18F14K50",
+                "__XC8"
+            ],
+            "compilerPath": "C:/Program Files/Microchip/xc8/v3.10/bin/xc8-cc.exe",
+            "cStandard": "c99",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}
