@@ -4,14 +4,36 @@
         {
             "label": "Build PIC18F14K50",
             "type": "process",
-            "command": "C:/Program Files/Microchip/xc8/v3.10/bin/xc8-cc.exe",
-            "args": [
-                "-mcpu=18f14k50",
-                "-mdfp=${env:USERPROFILE}/.mchp_packs/Microchip/PIC18F-K_DFP/1.15.303/xc8",
-                "main.c",
-                "-o",
-                "dist/main.hex"
-            ],
+            "windows": {
+                "command": "C:/Program Files/Microchip/xc8/v3.10/bin/xc8-cc.exe",
+                "args": [
+                    "-mcpu=18f14k50",
+                    "-mdfp=${env:USERPROFILE}/.mchp_packs/Microchip/PIC18F-K_DFP/1.15.303/xc8",
+                    "main.c",
+                    "-o",
+                    "dist/main.hex"
+                ]
+            },
+            "osx": {
+                "command": "/Applications/microchip/xc8/v3.10/bin/xc8-cc",
+                "args": [
+                    "-mcpu=18f14k50",
+                    "-mdfp=/Applications/microchip/mplabx/v6.30/packs/Microchip/PIC18F-K_DFP/1.15.303/xc8",
+                    "main.c",
+                    "-o",
+                    "dist/main.hex"
+                ]
+            },
+            "linux": {
+                "command": "/opt/microchip/xc8/v3.10/bin/xc8-cc",
+                "args": [
+                    "-mcpu=18f14k50",
+                    "-mdfp=/opt/microchip/mplabx/v6.30/packs/Microchip/PIC18F-K_DFP/1.15.303/xc8",
+                    "main.c",
+                    "-o",
+                    "dist/main.hex"
+                ]
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true
